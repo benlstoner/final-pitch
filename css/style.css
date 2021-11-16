@@ -1,0 +1,136 @@
+*{
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    width: 100%;
+    height: 60px;
+    background-color: aquamarine;
+    color: white;
+    text-align: right;
+    margin-bottom: 0;
+    position: fixed;
+}
+
+.menuBar{
+    height: 0;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: -60px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+bar{
+    height: 6px;
+    width: 80%;
+    background-color: yellow;
+}
+
+.menu{
+    position: fixed;
+    z-index: 99;
+    top: 60px;
+    right: -200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    color: black;
+    background-color: yellow;
+    min-height: 150px;
+}
+
+a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin-left: 8px;
+    margin-right: 8px;
+    line-height: 60px;
+}
+
+.logo{
+    z-index: 99;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 60px;
+    width: 60px;
+}
+
+.links{
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.wrapper{
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row{
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    height: 300px;
+    max-width: 300px;
+    color: black;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.homepage{
+    top: 60px;
+    position: absolute;
+    margin-top: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    line-height: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+}
+
+@media screen and (max-width: 800px){
+    .menuBar{
+        height: 100%;
+        width: 60px;
+        right: 0;
+    }
+    .menu{
+        right: -200px;
+    }
+    .links{
+        position: fixed;
+        right: -700px;
+    }
+    .a{
+        position: absolute;
+        right: -500px;
+    }
+}
